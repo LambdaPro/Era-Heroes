@@ -14,18 +14,6 @@
     $character->execute();
     $char = $character->fetch(PDO::FETCH_ASSOC);
 
-    // if($rows['owner'] == $_SESSION['character'])
-    // {
-    //     $updatePlayer = $conn->prepare("UPDATE characters SET roomId = '0' WHERE roomId = '$roomId'");
-    //     $updatePlayer->execute();
-    //
-    //     $deleteRoom = $conn->prepare("DELETE FROM room WHERE roomId = '$roomId'");
-    //     $deleteRoom->execute();
-    //
-    //     $updateRoomCount = $conn->prepare("UPDATE room SET currPlayers = currPlayers-1 WHERE roomId = '$roomId'");
-    //     $updateRoomCount->execute();
-    // }
-
     $updatePlayer = $conn->prepare("UPDATE characters SET roomId = '0' WHERE name = '$_SESSION[character]'");
     $updatePlayer->execute();
     $updateRoomCount = $conn->prepare("UPDATE room SET currPlayers = currPlayers-1 WHERE roomId = '$roomId'");
