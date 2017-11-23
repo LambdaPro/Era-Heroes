@@ -1,0 +1,251 @@
+*
+{
+    font-family: "Open Sans", sans-serif;
+    user-select:none;
+    outline: none;
+}
+
+body{
+    background:#5F81E4;
+}
+
+#map{
+    width:600px;
+    height:600px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.map_columns{
+    top:10%;
+    float:left;
+    width:100px;
+    height:100px;
+    text-align:center;
+    border:5px solid #fff;
+    background:#3e7dbc;
+    position:relative;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.map_columns:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@keyframes blink
+{
+    0%{
+      border: 5px solid #757474;
+    }
+
+    100%{
+      border: 5px solid #fff;
+    }
+}
+
+@keyframes darkblink
+{
+
+}
+
+.map_columns::after{
+    content: "";
+    position:absolute;
+    background:transparent;
+    width:20px;
+    height:20px;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
+    border:5px solid #fff;
+    border-radius:100%;
+    visibility: hidden;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.map_columns::before{
+    content: "";
+    position:absolute;
+    background:transparent;
+    width:50px;
+    height:50px;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
+    border:5px solid #fff;
+    border-radius:100%;
+    visibility: hidden;
+    animation-name: darkblink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.map_columns:hover:after, .map_columns:hover:before{
+
+    visibility: visible;
+}
+
+.break{
+    clear:both;
+}
+
+#battle-btn{
+    position: relative;
+    margin-left:-10%;
+    margin-top:15%;
+    width:220px;
+    height:50px;
+    background:#3e7dbc;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border:2px solid #fff;
+    border-radius:2px;
+    color:#FFF;
+}
+
+#battle-btn:hover{
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.playerdetail{
+    position:relative;
+    top:7px;
+    font-size:12px;
+    color:#FFF;
+
+}
+
+.matchname{
+  color:orange;
+  font-weight:bold;
+  font-size:13px;
+
+}
+
+.attack-options{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.currentPlayers{
+    margin: 0 auto;
+    text-align: center;
+    width:100%;
+
+}
+
+.playervsplayer{
+    position:relative;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    text-align: center;
+    float:left;
+    width:15%;
+    left: 35%;
+}
+
+.playervsplayer .player{
+    height:30px;
+    background:red;
+    margin:auto;
+    text-align: center;
+    color:#FFF;
+    border:1px solid red;
+    width:190px;
+    background: -moz-linear-gradient(left, #a90329 0%, #8f0222 44%, #6d0019 100%);
+    background: -webkit-linear-gradient(left, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    background: linear-gradient(to right, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+    margin-bottom:2px;
+}
+
+.playervsplayer .player span{
+    line-height:30px;
+}
+
+.playervsplayer .damage{
+    height:30px;
+    background:red;
+    margin:auto;
+    text-align: center;
+    color:#FFF;
+    border:1px solid #4b9ced;
+    width:190px;
+    background:#3e7dbc;
+}
+
+
+.playervsplayer .damage span{
+    line-height:30px;
+}
+
+.playervsplayer .level{
+    height:30px;
+    background:red;
+    margin:auto;
+    text-align: center;
+    color:#FFF;
+    border:1px solid #f97a18;
+    width:190px;
+    background:#db6a13;
+    margin-bottom:2px;
+}
+
+
+.playervsplayer .level span{
+    line-height:30px;
+}
+
+.playervsplayer h2{
+    color:#FFF;
+}
+
+.attack-options form{
+    position:absolute;
+    top:20%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+.attack-options form input[type=submit]
+{
+    width:220px;
+    height:50px;
+    margin-top:100px;
+    background:#1e4064;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border:1px solid #fff;
+    color:#FFF;
+    margin-left:25px;
+    margin-right:25px;
+    cursor: pointer;
+}
+
+#leavegameroom{
+    position:relative;
+}
+
+#leaveroom{
+    position:absolute;
+    margin-top:150px;
+    margin-left:-150px;
+    width:220px;
+    height:50px;
+    background:#1e4064;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border:1px solid #fff;
+    color:#FFF;
+    cursor: pointer;
+}
