@@ -11,11 +11,17 @@ It's suppose to be a online game where you can spawn on a map, see other players
 You technically can do all that, although it's not perfect... it does work.
 
 -> Login system
+
 -> Chat system
+
 -> View users stats
+
 -> Create rooms
+
 -> Explore game lobbies
+
 -> Challenge other players if both of your coordinates are equal
+
 -> Gain levels
 
 I won't be updating it any further, but as I said... I will re-visit this as a new project in the far future.
