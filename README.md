@@ -1,6 +1,8 @@
 # Era-Heroes
 Online Multiplayer RPG Concept
 
+Edit: 2/24/2020 - The code on this project is very old & I was in a more so learning stage so the code is bad and not ideal. So it shouldn't be a reference of my current coding style.
+
 This project was 100% for practice.  I was trying to see what type of game I could create using mainly PHP as the key tool.  My final verdict is that I will not ever use PHP again the way I did for this project.  
 
 The pros are that I learned A LOT while doing this.  Although, I won't apply what I learned to this project; I will apply everything new that I now understand into future projects.  I will definitly redo this but with different programming languages.
