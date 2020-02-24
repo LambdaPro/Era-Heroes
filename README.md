@@ -4,7 +4,7 @@
 
 The code on this project is very old & I was in a more so learning stage so the code is bad and not ideal. So it shouldn't be a reference of my current coding style.
 
-Online Multiplayer RPG Concept
+# Online Multiplayer RPG Concept
 
 This project was 100% for practice.  I was trying to see what type of game I could create using mainly PHP as the key tool.  My final verdict is that I will not ever use PHP again the way I did for this project.  
 
